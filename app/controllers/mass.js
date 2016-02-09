@@ -2,7 +2,7 @@ import ConversionController from 'unit-converter/controllers/conversion';
 export default ConversionController.extend({
 
   conversionUnits: [
-    { value: 0.0000001, label: 'Micrograms', propertyName: 'micrograms' },
+    { value: 0.000001, label: 'Micrograms', propertyName: 'micrograms' },
     { value:  0.001, label: 'Miligrams', propertyName: 'miligrams' },
     { value: 1, label: "Grams", propertyName: 'grams' },
     { value: 1000, label: 'Kilograms', propertyName: 'kilograms' },

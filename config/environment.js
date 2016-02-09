@@ -12,6 +12,21 @@ module.exports = function(environment) {
         // e.g. 'with-controller': true
       }
     },
+    jsHint: {
+      esversion: 6
+    },
+
+    contentSecurityPolicy: {
+      'object-src': "'self'",
+      'frame-src': "'self'",
+      'default-src': "'none'",
+      'script-src': "'self' 'unsafe-inline' 'unsafe-eval' http://api.fixer.io",
+      'font-src': "'self'",
+      'connect-src': "'self' http://api.fixer.io *",
+      'img-src': "'self'",
+      'style-src': "'self' 'unsafe-inline'",
+      'media-src': "'self'"
+    },
 
     APP: {
       // Here you can pass flags/options to your application instance

@@ -8,6 +8,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
 	this.route('volume');
 	this.route('mass');
+	this.route('currency');
 });
 
 export default Router;
