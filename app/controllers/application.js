@@ -15,8 +15,6 @@ export default Ember.Controller.extend({
     return ROUTE_TO_TITLE_MAP[currentPath] || '';
   }).property('currentPath'),
 
-  showBackButton: (function() {
-    return (this.get('currentPath') !== 'index');
-  }).property('currentPath')
+  hideNavBar: Ember.computed.equal('currentPath', 'index')
 
 });

@@ -1,0 +1,13 @@
+.unit-module {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+.unit-module-label {
+  display: block
+}
+.unit-module-input {
+  height: 30px;
+  padding: 10px;
+  appearance: none;
+}

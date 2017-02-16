@@ -10,6 +10,10 @@ module.exports = function(defaults) {
           'app': '/assets/unit-converter.css'
         }
       }
+    },
+    autoprefixer: {
+      browsers: ['last 2 ios version'],
+      cascade: false
     }
   });
 

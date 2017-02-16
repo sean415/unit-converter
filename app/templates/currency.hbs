@@ -1,2 +1,3 @@
-{{unit-module value=USD label="USD"}}
-{{unit-module value=GBP label="British Pounds"}}
+{{#each currencies as |currency|}}
+  {{unit-module value=(get this currency.value) label=currency.displayName}}
+{{/each}}

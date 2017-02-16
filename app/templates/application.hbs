@@ -1,7 +1,17 @@
-<header class="header-bar">
-  {{#if showBackButton}}
-    {{#link-to 'index' class="header-bar-back-button"}}Back{{/link-to}}
-  {{/if}}
-  <h2 id="title">{{headerTitle}}</h2>
-</header>
-{{outlet}}
+{{#unless hideNavBar}}
+  <nav class="nav-bar">
+    <ul class="nav-items">
+      <li>{{#link-to 'mass'}}Mass / Weight{{/link-to}}</li>
+      <li>{{#link-to 'volume'}}Volume (liquid){{/link-to}}</li>
+      <li>{{#link-to 'currency'}}Currency{{/link-to}}</li>
+    </ul>
+  </nav>
+{{/unless}}
+<section class="main">
+  <header class="header-bar">
+    <h2 id="title">{{headerTitle}}</h2>
+  </header>
+  <section class="outlet">
+    {{outlet}}
+  </section>
+</section>
